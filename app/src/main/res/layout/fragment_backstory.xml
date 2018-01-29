@@ -1,0 +1,159 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maciej.udemyfragmentspractice.Fragments.BackstoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.example.maciej.udemyfragmentspractice.Views.LinearLayoutLines
+        android:id="@+id/mainLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hero_bg_gradient"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/firstItemGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BACKSTORY"
+                android:textAlignment="center"
+                android:textColor="#FBC82D"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondItemGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="215dp"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="BACKSTORY"
+                        android:textAlignment="center"
+                        android:textColor="@color/whiteDraw"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/logoImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/big_superman_logo" />
+
+                    <TextView
+                        android:id="@+id/backstoryText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignWithParentIfMissing="false"
+                        android:layout_below="@+id/logoImage"
+                        android:layout_centerInParent="false"
+                        android:layout_marginTop="-15dp"
+                        android:gravity="bottom|left"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/whiteDraw" />
+
+                </RelativeLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRIMARY POWER"
+                android:textColor="@color/whiteDraw"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/primaryBtn"
+                style="@style/item_pick_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/laser_vision"
+                android:drawableRight="@drawable/item_unselected"
+                android:enabled="false"
+                android:text="Laser Vision" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SECONDARY POWER"
+                android:textColor="@color/whiteDraw"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/secondaryBtn"
+                style="@style/item_pick_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/super_strength"
+                android:drawableRight="@drawable/item_unselected"
+                android:enabled="false"
+                android:text="Super Strength" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdItemGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <Button
+                android:id="@+id/startOverBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/hero_solid_btn"
+                android:backgroundTint="#FBC82D"
+                android:text="START OVER"
+                android:textColor="#10161D"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </com.example.maciej.udemyfragmentspractice.Views.LinearLayoutLines>
+
+</FrameLayout>

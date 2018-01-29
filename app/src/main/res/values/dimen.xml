@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="circle_top_space">20dp</dimen>
+    <dimen name="circle_bottom_top_space">0dp</dimen>
+    <dimen name="circle_left_space">25dp</dimen>
+    <dimen name="circle_radius">7dp</dimen>
+    <dimen name="circle_stroke_width">0.5dp</dimen>
+    <dimen name="first_line_start_x">32dp</dimen>
+    <dimen name="first_line_start_y">20dp</dimen>
+    <dimen name="line_margin">20dp</dimen>
+    <dimen name="line_connect_radius">10dp</dimen>
+    <dimen name="line_top_margin">15dp</dimen>
+    <dimen name="second_level_margin">5dp</dimen>
+    <dimen name="third_level_margin">12.5dp</dimen>
+    <dimen name="textIndent">60dp</dimen>
+
+</resources>

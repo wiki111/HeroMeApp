@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maciej.udemyfragmentspractice.Fragments.MainFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.example.maciej.udemyfragmentspractice.Views.LinearLayoutLines
+        android:id="@+id/mainLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hero_bg_gradient"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/firstItemGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="How did you get your powers?"
+                android:textAlignment="center"
+                android:textColor="#FBC82D"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/heroes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondItemGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <Button
+                android:id="@+id/accidentBtn"
+                style="@style/item_pick_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lightning"
+                android:drawableRight="@drawable/item_unselected"
+                android:text="Came by accident" />
+
+            <Button
+                android:id="@+id/geneticBtn"
+                style="@style/item_pick_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/atomic"
+                android:drawableRight="@drawable/item_unselected"
+                android:text="Genetic mutation" />
+
+            <Button
+                android:id="@+id/bornBtn"
+                style="@style/item_pick_btn_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/rocket"
+                android:drawableRight="@drawable/item_unselected"
+                android:text="Born with them" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdItemGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <Button
+                android:id="@+id/chooseBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/hero_solid_btn"
+                android:backgroundTint="#FBC82D"
+                android:text="Choose powers"
+                android:textColor="#10161D"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+    </com.example.maciej.udemyfragmentspractice.Views.LinearLayoutLines>
+
+</FrameLayout>
